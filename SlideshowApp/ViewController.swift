@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     var image2:UIImage!
     var image3:UIImage!
     var timer : Timer!
-    var sec:Int = 0
+    var sec:Int = 2
     @IBOutlet weak var Stop: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var TapZoom: UITapGestureRecognizer!
@@ -52,14 +52,14 @@ class ViewController: UIViewController {
         if timer == nil{
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             Stop.setTitle("停止", for: .normal)
-            進む.isEnabled = false
-            戻る.isEnabled = false
+            進む.isHidden = true
+            戻る.isHidden = true
         }else{
             self.timer.invalidate()
             timer = nil
             Stop.setTitle("再生", for: .normal)
-            進む.isEnabled = true
-            戻る.isEnabled = true
+            進む.isHidden = false
+            戻る.isHidden = false
         }
     }
     
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let Zoom:ZoomViewController = segue.destination as! ZoomViewController
-        Zoom.zoomimage = imageView.image!
+        Zoom.zoomimage = imageView.image
 }
 }
 
