@@ -13,6 +13,10 @@
 		EAE180EE25FFDF6300BFD26C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE180EC25FFDF6300BFD26C /* Main.storyboard */; };
 		EAE180F025FFDF6400BFD26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE180EF25FFDF6400BFD26C /* Assets.xcassets */; };
 		EAE180F325FFDF6400BFD26C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE180F125FFDF6400BFD26C /* LaunchScreen.storyboard */; };
+		EAE180FC25FFE07700BFD26C /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE180FB25FFE07700BFD26C /* ZoomViewController.swift */; };
+		EAE1810125FFE11000BFD26C /* 半熟卵.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE180FE25FFE11000BFD26C /* 半熟卵.png */; };
+		EAE1810225FFE11000BFD26C /* たい焼き.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE180FF25FFE11000BFD26C /* たい焼き.png */; };
+		EAE1810725FFE15700BFD26C /* 酸素画像.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE1810625FFE15700BFD26C /* 酸素画像.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EAE180EF25FFDF6400BFD26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE180F225FFDF6400BFD26C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAE180F425FFDF6400BFD26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE180FB25FFE07700BFD26C /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		EAE180FE25FFE11000BFD26C /* 半熟卵.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "半熟卵.png"; sourceTree = "<group>"; };
+		EAE180FF25FFE11000BFD26C /* たい焼き.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "たい焼き.png"; sourceTree = "<group>"; };
+		EAE1810625FFE15700BFD26C /* 酸素画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "酸素画像.png"; path = "../../../../Downloads/酸素画像.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				EAE180E625FFDF6300BFD26C /* AppDelegate.swift */,
 				EAE180E825FFDF6300BFD26C /* SceneDelegate.swift */,
 				EAE180EA25FFDF6300BFD26C /* ViewController.swift */,
+				EAE180FB25FFE07700BFD26C /* ZoomViewController.swift */,
+				EAE1810625FFE15700BFD26C /* 酸素画像.png */,
 				EAE180EC25FFDF6300BFD26C /* Main.storyboard */,
+				EAE180FF25FFE11000BFD26C /* たい焼き.png */,
+				EAE180FE25FFE11000BFD26C /* 半熟卵.png */,
 				EAE180EF25FFDF6400BFD26C /* Assets.xcassets */,
 				EAE180F125FFDF6400BFD26C /* LaunchScreen.storyboard */,
 				EAE180F425FFDF6400BFD26C /* Info.plist */,
@@ -124,7 +136,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE1810125FFE11000BFD26C /* 半熟卵.png in Resources */,
+				EAE1810725FFE15700BFD26C /* 酸素画像.png in Resources */,
 				EAE180F325FFDF6400BFD26C /* LaunchScreen.storyboard in Resources */,
+				EAE1810225FFE11000BFD26C /* たい焼き.png in Resources */,
 				EAE180F025FFDF6400BFD26C /* Assets.xcassets in Resources */,
 				EAE180EE25FFDF6300BFD26C /* Main.storyboard in Resources */,
 			);
@@ -140,6 +155,7 @@
 				EAE180EB25FFDF6300BFD26C /* ViewController.swift in Sources */,
 				EAE180E725FFDF6300BFD26C /* AppDelegate.swift in Sources */,
 				EAE180E925FFDF6300BFD26C /* SceneDelegate.swift in Sources */,
+				EAE180FC25FFE07700BFD26C /* ZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
