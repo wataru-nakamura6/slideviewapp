@@ -8,43 +8,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var image1:UIImage!
-    var image2:UIImage!
-    var image3:UIImage!
+    let image1 = UIImage(named:"たい焼き.png")
+    let image2 = UIImage(named:"酸素画像.png")
+    let image3 = UIImage(named:"半熟卵.png")
     var timer : Timer!
-    var sec:Int = 2
+    var sec : Int = 2
+    var image_array = [UIImage]()
     @IBOutlet weak var Stop: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var TapZoom: UITapGestureRecognizer!
     @IBOutlet weak var 進む: UIButton!
     @IBOutlet weak var 戻る: UIButton!
+    var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        image1 = UIImage(named:"たい焼き.png")
-        image2 = UIImage(named:"酸素画像.png")
-        image3 = UIImage(named:"半熟卵.png")
-        imageView.image = image1
+        image_array = [image1! , image2! , image3!]
+        imageView.image = image_array[0]
     }
     
     @IBAction func Back(_ sender: Any) {
-        if imageView.image == image1{
-            imageView.image = image3
-        }else if imageView.image == image3{
-            imageView.image = image2
-        }else{
-            imageView.image = image1
+        imageView.image = image_array[count]
+        count -= 1
+        if count == -1 {
+            count = 2
         }
     }
     
     @IBAction func Next(_ sender: Any) {
-        if imageView.image == image1{
-            imageView.image = image2
-        }else if imageView.image == image2{
-            imageView.image = image3
-        }else{
-            imageView.image = image1
+        imageView.image = image_array[count]
+        count += 1
+        if count == 3{
+            count = 0
         }
     }
     
@@ -65,12 +61,13 @@ class ViewController: UIViewController {
     
     @objc func updateTimer(_ timer: Timer) {
         self.sec += 2
+        imageView.image = image_array[count]
         if sec == 2{
-            imageView.image = image1
+            count = 0
         }else if sec == 4{
-            imageView.image = image2
+            count = 1
         }else{
-            imageView.image = image3
+            count = 2
             sec = 0
         }
         }
