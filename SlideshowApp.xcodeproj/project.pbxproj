@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA08BE55260B2BAB00CA471B /* 酸素画像.png in Resources */ = {isa = PBXBuildFile; fileRef = EA08BE54260B2BAB00CA471B /* 酸素画像.png */; };
 		EAE180E725FFDF6300BFD26C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE180E625FFDF6300BFD26C /* AppDelegate.swift */; };
 		EAE180E925FFDF6300BFD26C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE180E825FFDF6300BFD26C /* SceneDelegate.swift */; };
 		EAE180EB25FFDF6300BFD26C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE180EA25FFDF6300BFD26C /* ViewController.swift */; };
@@ -16,10 +17,10 @@
 		EAE180FC25FFE07700BFD26C /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE180FB25FFE07700BFD26C /* ZoomViewController.swift */; };
 		EAE1810125FFE11000BFD26C /* 半熟卵.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE180FE25FFE11000BFD26C /* 半熟卵.png */; };
 		EAE1810225FFE11000BFD26C /* たい焼き.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE180FF25FFE11000BFD26C /* たい焼き.png */; };
-		EAE18152260494AA00BFD26C /* 酸素画像.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE18151260494AA00BFD26C /* 酸素画像.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA08BE54260B2BAB00CA471B /* 酸素画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "酸素画像.png"; sourceTree = "<group>"; };
 		EAE180E325FFDF6300BFD26C /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE180E625FFDF6300BFD26C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE180E825FFDF6300BFD26C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		EAE180FB25FFE07700BFD26C /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 		EAE180FE25FFE11000BFD26C /* 半熟卵.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "半熟卵.png"; sourceTree = "<group>"; };
 		EAE180FF25FFE11000BFD26C /* たい焼き.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "たい焼き.png"; sourceTree = "<group>"; };
-		EAE18151260494AA00BFD26C /* 酸素画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "酸素画像.png"; path = "../../../../Downloads/酸素画像.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				EAE180EC25FFDF6300BFD26C /* Main.storyboard */,
 				EAE180FF25FFE11000BFD26C /* たい焼き.png */,
 				EAE180FE25FFE11000BFD26C /* 半熟卵.png */,
-				EAE18151260494AA00BFD26C /* 酸素画像.png */,
+				EA08BE54260B2BAB00CA471B /* 酸素画像.png */,
 				EAE180EF25FFDF6400BFD26C /* Assets.xcassets */,
 				EAE180F125FFDF6400BFD26C /* LaunchScreen.storyboard */,
 				EAE180F425FFDF6400BFD26C /* Info.plist */,
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE1810125FFE11000BFD26C /* 半熟卵.png in Resources */,
-				EAE18152260494AA00BFD26C /* 酸素画像.png in Resources */,
+				EA08BE55260B2BAB00CA471B /* 酸素画像.png in Resources */,
 				EAE180F325FFDF6400BFD26C /* LaunchScreen.storyboard in Resources */,
 				EAE1810225FFE11000BFD26C /* たい焼き.png in Resources */,
 				EAE180F025FFDF6400BFD26C /* Assets.xcassets in Resources */,

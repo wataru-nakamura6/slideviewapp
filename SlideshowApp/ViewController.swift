@@ -69,8 +69,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let Zoom:ZoomViewController = segue.destination as! ZoomViewController
         Zoom.zoomimage = imageView.image
+        
+        if timer != nil {
         self.timer.invalidate()
-        timer = nil
+            timer = nil}
         Stop.setTitle("再生", for: .normal)
         進む.isHidden = false
         戻る.isHidden = false
